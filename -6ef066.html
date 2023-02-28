@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Chrome, Firefox OS and Opera Status Bar Color -->
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+<link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/notablog.css">
+<!-- Favicon -->
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📖&lt;/text&gt;&lt;/svg&gt;">
+
+<style>
+  :root {
+    font-size: 20px;
+  }
+</style>
+  <title>ALGORITHM&nbsp;|&nbsp;Welcome to Robin’s Blog</title>
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="ALGORITHM">
+  
+    <meta name="description" content="一些常见算法的总结。">
+    <meta property="og:description" content="一些常见算法的总结。">
+  
+  
+    <meta property="og:image" content="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🎃&lt;/text&gt;&lt;/svg&gt;">
+  
+  <style>
+    .DateTagBar {
+      margin-top: 1.0rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="Navbar">
+  <a href="index.html">
+    <div class="Navbar__Btn">
+      
+        <span><img class="inline-img-icon" src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📖&lt;/text&gt;&lt;/svg&gt;"></span>&nbsp;
+      
+      <span>Home</span>
+    </div>
+  </a>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <span class="Navbar__Delim">&centerdot;</span>
+      <a href="-d98406.html">
+        <div class="Navbar__Btn">
+          
+            <span><img class="inline-img-icon" src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;😀&lt;/text&gt;&lt;/svg&gt;"></span>&nbsp;
+          
+          <span>About ME</span>
+        </div>
+      </a>
+    
+  
+    
+  
+</nav>
+  <header class="Header">
+    
+      <div class="Header__Cover">
+        <img src="https://www.notion.so/images/page-cover/met_william_morris_1877_willow.jpg">
+      </div>
+    
+    <div class="Header__Spacer ">
+    </div>
+    
+      <div class="Header__Icon">
+        <span><img class="inline-img-icon" src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🎃&lt;/text&gt;&lt;/svg&gt;"></span>
+      </div>
+    
+    <h1 class="Header__Title">ALGORITHM</h1>
+    
+      <div class="DateTagBar">
+        
+          <span class="DateTagBar__Item DateTagBar__Date">Posted on Mon, Feb 27, 2023</span>
+        
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--pink">
+            <a href="tag/计算机基础.html">计算机基础</a>
+          </span>
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--default">
+            <a href="tag/算法.html">算法</a>
+          </span>
+        
+      </div>
+    
+  </header>
+  <article id="https://www.notion.so/6ef0661cc0154378affd1bdf8fb99f3a" class="PageRoot"><h2 id="https://www.notion.so/42af70ccb33b4d22bff45297b66e4ef7" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/42af70ccb33b4d22bff45297b66e4ef7"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Sort Algorithm</span></span></h2><ol class="NumberedListWrapper"><li id="https://www.notion.so/0924c484fe054b4f990b640dc3ca3d7b" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">Quick Sort</span></span></li><li id="https://www.notion.so/1a4b37eadce3438396469c4078cda5c0" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">Merge Sort</span></span></li><li id="https://www.notion.so/7ac59c7cbfe6403f8de34599a5eb7c98" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">Binary Search</span></span></li></ol><h2 id="https://www.notion.so/0136b478ed66449482e8da3fbffd2d22" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/0136b478ed66449482e8da3fbffd2d22"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">Graph Algorithm</span></span></h2><ol class="NumberedListWrapper"><li id="https://www.notion.so/da9b183e02c24aa088b51c409dc0c549" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">BFS 广度优先搜索</span></span><ul class="BulletedListWrapper"><li id="https://www.notion.so/de938419c1984ffc9d0ad1b212e3a144" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Breadth-first search (BFS): explore G starting from s outward in all possible directions, adding reachable nodes one layer at a time.</span></span><ul class="BulletedListWrapper"><li id="https://www.notion.so/db9d644490274b94ab2daa154fe7564e" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">First add all nodes that are joined by an edge to the source: these nodes form the first layer.
+If G is unweighted, these are the nodes at distance 1 from s.</span></span></li><li id="https://www.notion.so/a80c96bf2e564d7e91fc358c916f167b" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Then add all nodes that are joined by an edge to a node in the first layer: these nodes form the second layer.</span></span></li><li id="https://www.notion.so/019c2e64ee674ca1a0569e175a4d2a28" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">If G is unweighted, these are the nodes at distance 2 from s.</span></span></li><li id="https://www.notion.so/eaf2702f264c447b82ae3fd51c8ef9e8" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">And so on and so forth.</span></span></li></ul></li><li id="https://www.notion.so/fd405e3cb79b4c28b72b4bd674457d00" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Facts of BFS</span></span><ul class="BulletedListWrapper"><li id="https://www.notion.so/20ef9133633045e29528764adbb7027d" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Math" data-latex="L_i"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">L_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></span><span class="SemanticString"> is the set of nodes that are at distance </span><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Math" data-latex="i"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span></span></span><span class="SemanticString"> from s. Equivalently, the length of the shortest s-v path for all </span><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Math" data-latex="v ∈ L_i"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><msub><mi>L</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">v ∈ L_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></span><span class="SemanticString"> equals </span><span class="SemanticString"><span class="SemanticString__Fragment SemanticString__Fragment--Math" data-latex="i"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span></span></span><span class="SemanticString">.</span></span></li></ul></li><li id="https://www.notion.so/94646a92c4ab4e6da7ce4d011816a552" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Pseudo Code with explanation</span></span><pre id="https://www.notion.so/039fb4ba40ae4964ac89c4f045d29a51" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>BFS(G = (V, E), s ∈ V )
+	# discovered array表示一个vertex是否已被访问过
+	# 如果被访问过则记为1，没有则记为0
+	array discovered[V] initialized all vertices to 0 ---- O(n)
+
+	# The dist array记录了source到每一个vertex的最短路径
+	# 除了source自身，所有vertex的初始路径都为无穷大
+	array dist[V] initialized to infinity array ---- O(n)
+
+	# The parent array记录了每一个vertex的parent
+	parent[V] initialized to NIL ---- O(n)
+
+	# q记录正在被处理或者当前被访问的vertices
+	queue q ---- O(1)
+
+	# Initialize with source ---- O(1)
+	discovered[s] = 1
+	dist[s] = 0
+	parent[s] = NIL
+
+	# 因为source是第一个visited的vertex, 将当前要处理的vertex s加入queue
+	enqueue(q, s) ---- O(1)
+
+	# 当当前需要处理的queue不为空时
+	while size(q)&gt;0 do
+	# 取出第一个vertex &#x27;u&#x27;并检索所有从&#x27;u&#x27;延伸出的edges(u, v)
+	u =dequeue(q)
+		# 对于每一个与&#x27;u&#x27;相连的vertex &#x27;v&#x27;
+		for (u, v) ∈ E do
+		# 如果&#x27;v&#x27;还未被访问过，即discovered[v] == 0
+			if discovered[v] == 0 then 
+				# 则标记&#x27;v&#x27;为已访问过，即discovered[v] == 1
+				discovered[v] = 1
+				# 对于unweighted graph，source到&#x27;v&#x27;的距离 = source到&#x27;u&#x27;的距离 + 1
+				dist[v] = dist[u] + 1
+				# 更新当前vertex &#x27;v&#x27;的parent为&#x27;u&#x27;
+				parent[v] = u
+				# 把&#x27;v&#x27;添加进q作为下一个layer要检索的vertex
+				enqueue(q, v)
+				# 如果vertex&#x27;v&#x27;已被访问过，则进入下一个for loop检索未被访问的&#x27;v&#x27;
+			end if 
+		end for
+	end while</span></span></span></code></pre></li><li id="https://www.notion.so/d6973fbad9ec4413990d0182026c3408" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Time complexity analysis</span></span><div id="https://www.notion.so/4cb9ca1da0ac462b84d28ce485d30872" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">前面初始化部分的时间复杂度为O(n)，因为只需要遍历每个节点一次。对于while循环来讲，q的最大数量就是vertices的总数，所以while loop不会超过|V|次迭代，即O(|V|)。对于for loop，检索每一个和’u’临近的节点v，显然不会超过|E|次迭代，这一步的时间实际上与’u’的degrees成比例。因此，检查图中与所有顶点相邻的所有边所花费的总时间与所有顶点的degrees之和成正比，即 2|E| (因为每条边都对恰好两个顶点)。</span></span></p></div><div id="https://www.notion.so/fa109c19a8e84e7997226c0e280a8c97" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">综上所述，BFS的时间复杂度为O(|V| + |E|)。</span></span></p></div></li><li id="https://www.notion.so/b5c3adec0d4f4605bf2d1481c22063b8" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Implementation - without tracking the distance and parent</span></span><pre id="https://www.notion.so/065f1ae2297848eba8ddee4fb2f319ac" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment"># Python3 Program to print BFS traversal</span>
+<span class="token comment"># from a given source vertex. BFS(int s)</span>
+<span class="token comment"># traverses vertices reachable from s.</span>
+<span class="token keyword">from</span> collections <span class="token keyword">import</span> defaultdict
+
+<span class="token comment"># This class represents a directed graph</span>
+<span class="token comment"># using adjacency list representation</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Graph</span><span class="token punctuation">:</span>
+
+	<span class="token comment"># Constructor</span>
+	<span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+		<span class="token comment"># default dictionary to store graph</span>
+		self<span class="token punctuation">.</span>graph <span class="token operator">=</span> defaultdict<span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">)</span>
+
+	<span class="token comment"># function to add an edge to graph</span>
+	<span class="token keyword">def</span> <span class="token function">addEdge</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+		self<span class="token punctuation">.</span>graph<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span>v<span class="token punctuation">)</span>
+
+	<span class="token comment"># Function to print a BFS of graph</span>
+	<span class="token keyword">def</span> <span class="token function">BFS</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+		<span class="token comment"># Mark all the vertices as not visited</span>
+		visited <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">False</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token builtin">max</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>graph<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+
+		<span class="token comment"># Create a queue for BFS</span>
+		queue <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+		<span class="token comment"># Mark the source node as</span>
+		<span class="token comment"># visited and enqueue it</span>
+		queue<span class="token punctuation">.</span>append<span class="token punctuation">(</span>s<span class="token punctuation">)</span>
+		visited<span class="token punctuation">[</span>s<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">True</span>
+
+		<span class="token keyword">while</span> queue<span class="token punctuation">:</span>
+
+			<span class="token comment"># Dequeue a vertex from</span>
+			<span class="token comment"># queue and print it</span>
+			s <span class="token operator">=</span> queue<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+			<span class="token keyword">print</span><span class="token punctuation">(</span>s<span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span>
+
+			<span class="token comment"># Get all adjacent vertices of the</span>
+			<span class="token comment"># dequeued vertex s. If a adjacent</span>
+			<span class="token comment"># has not been visited, then mark it</span>
+			<span class="token comment"># visited and enqueue it</span>
+			<span class="token keyword">for</span> i <span class="token keyword">in</span> self<span class="token punctuation">.</span>graph<span class="token punctuation">[</span>s<span class="token punctuation">]</span><span class="token punctuation">:</span>
+				<span class="token keyword">if</span> visited<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token boolean">False</span><span class="token punctuation">:</span>
+					queue<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+					visited<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">True</span></span></span></span></code></pre></li><li id="https://www.notion.so/2fcb117c1b7d49d6be755c9e4b76ae74" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Application</span></span><ul class="BulletedListWrapper"><li id="https://www.notion.so/f032449ed0e84bdda373434e9d04d78f" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">A natural way to solve 2-colorability(bipartite-ness)</span></span></li></ul><div id="https://www.notion.so/4161c52629a84ee8a741c5c57929fae0" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div></li></ul></li><li id="https://www.notion.so/c400020d562544b4b5849e6d00844eed" class="NumberedList" value="2"><span class="SemanticStringArray"><span class="SemanticString">DFS 深度优先搜索</span></span><ul class="BulletedListWrapper"><li id="https://www.notion.so/fcc9aec0a8f247aea71ce786f31551f4" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Depth-first search is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and </span><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">explores</strong></span><span class="SemanticString"> </span><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">as far as possible along each branch before backtracking</strong></span><span class="SemanticString">.</span></span></li><li id="https://www.notion.so/b5738160fadb4872b77fd59bdfd25ec8" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Basic idea:</strong></span><span class="SemanticString"> Start from the root or any arbitrary node and mark the node and move to the adjacent unmarked node and continue this loop until there is no unmarked adjacent node. Then backtrack and check for other unmarked nodes and traverse them. Finally, print the nodes in the path.</span></span></li><li id="https://www.notion.so/01d1cddc75fe4efe9aefd6749794f1d6" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Algorithm with explanation</span></span><pre id="https://www.notion.so/5d74b72ae2d74c3b8ce2ebd03c827755" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span># array explored来记录一个vertex是否已被访问
+DFS(G = (V, E)) 
+	# Initialize the global variable time to 0
+	time = 0
+	# 对于每一个V中的vertex，标记每一个vertex的初始状态为未被访问
+	for u ∈ V do
+		explored[u] = 0 
+	end for
+	
+	# 对于每一个V中的vertex u
+	for u ∈ V do
+		# 如果&#x27;u&#x27;尚未被访问，则call检索function search(u)
+		if explored[u] == 0 then 
+			Search(u) 
+		end if
+	end for
+
+Search(u) 
+	previsit(u)
+	#更改&#x27;u&#x27;的标记为已被访问
+	explored[u] = 1 
+	# 对于每一个与&#x27;u&#x27;相连的vertex &#x27;v&#x27;
+	for (u, v) ∈ E do
+		# 如果&#x27;v&#x27;未被访问，则call search(v)
+		if explored[v] == 0 then 
+			Search(v)
+		end if 
+	end for
+	postvisit(u)
+
+# start(u) is the time when u is pushed in the stack
+# finish(u) is the time when u is popped from the stack
+
+previsit(u)
+	time += 1
+	start(u) = time
+	push(stack, u)
+
+postvisit(u)
+	time += 1
+	finish(u) = time
+	pop(stack, u)</span></span></span></code></pre><div id="https://www.notion.so/391b35d6fea84450829afcf541ff61f1" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">Here is a flow chart of how this algorithm works.</span></span></p></div><div id="https://www.notion.so/2e56983a351d49378a1ed001ecfe153d" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F94bdbeaa-f9ea-4bc7-8969-dc9502206dc5%2FDFS_flow.jpeg?width=1668&amp;table=block&amp;id=2e56983a-351d-4937-8a1e-d001ecfe153d"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F94bdbeaa-f9ea-4bc7-8969-dc9502206dc5%2FDFS_flow.jpeg?width=1668&amp;table=block&amp;id=2e56983a-351d-4937-8a1e-d001ecfe153d" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div></li><li id="https://www.notion.so/226f66a532de4237b92245950d904792" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString">Time complexity analysis</span></span><div id="https://www.notion.so/12fb5cf67ed2471899c38ad912041bf3" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">The time complexity of the DFS algorithm is O(|V| + |E|), where |V| is the number of vertices in the graph, and |E| is the number of edges in the graph. The initialization of the &#x27;explored&#x27; array takes O(|V|) time, and the Search function is called for each vertex in the graph, which takes O(|V|) time. The total time taken to examine all edges in the graph is proportional to the sum of the degrees of all vertices, which is 2|E|. Therefore, the time complexity of examining all edges in the graph is O(|E|). Overall, the time complexity of the DFS algorithm is O(|V| + |E|).</span></span></p></div></li><li id="https://www.notion.so/07f7c8c2cc0e498abef9b3534af978d6" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"> Implementation</span></span><pre id="https://www.notion.so/853f69acb55b4f8d91c4d314adac7fd4" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment"># Python3 program to print DFS traversal</span>
+<span class="token comment"># from a given graph</span>
+<span class="token keyword">from</span> collections <span class="token keyword">import</span> defaultdict
+
+<span class="token comment"># This class represents a directed graph using</span>
+<span class="token comment"># adjacency list representation</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Graph</span><span class="token punctuation">:</span>
+
+	<span class="token comment"># Constructor</span>
+	<span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+		<span class="token comment"># default dictionary to store graph</span>
+		self<span class="token punctuation">.</span>graph <span class="token operator">=</span> defaultdict<span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">)</span>
+
+	<span class="token comment"># function to add an edge to graph</span>
+	<span class="token keyword">def</span> <span class="token function">addEdge</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+		self<span class="token punctuation">.</span>graph<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span>v<span class="token punctuation">)</span>
+
+	<span class="token comment"># A function used by DFS</span>
+	<span class="token keyword">def</span> <span class="token function">DFSUtil</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> v<span class="token punctuation">,</span> visited<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+		<span class="token comment"># Mark the current node as visited</span>
+		<span class="token comment"># and print it</span>
+		visited<span class="token punctuation">.</span>add<span class="token punctuation">(</span>v<span class="token punctuation">)</span>
+		<span class="token keyword">print</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">' '</span><span class="token punctuation">)</span>
+
+		<span class="token comment"># Recur for all the vertices</span>
+		<span class="token comment"># adjacent to this vertex</span>
+		<span class="token keyword">for</span> neighbour <span class="token keyword">in</span> self<span class="token punctuation">.</span>graph<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">:</span>
+			<span class="token keyword">if</span> neighbour <span class="token keyword">not</span> <span class="token keyword">in</span> visited<span class="token punctuation">:</span>
+				self<span class="token punctuation">.</span>DFSUtil<span class="token punctuation">(</span>neighbour<span class="token punctuation">,</span> visited<span class="token punctuation">)</span>
+
+	<span class="token comment"># The function to do DFS traversal. It uses</span>
+	<span class="token comment"># recursive DFSUtil()</span>
+	<span class="token keyword">def</span> <span class="token function">DFS</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+		<span class="token comment"># Create a set to store visited vertices</span>
+		visited <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+		<span class="token comment"># Call the recursive helper function</span>
+		<span class="token comment"># to print DFS traversal</span>
+		self<span class="token punctuation">.</span>DFSUtil<span class="token punctuation">(</span>v<span class="token punctuation">,</span> visited<span class="token punctuation">)</span></span></span></span></code></pre><div id="https://www.notion.so/afb8ac99aac44d0eb60ebefbb5444d0b" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div></li></ul></li><li id="https://www.notion.so/64770145a3bf44d8ad9eb6e8e5b33c5f" class="NumberedList" value="3"><span class="SemanticStringArray"><span class="SemanticString">Dijkstra - The shortest path from a source to all vertices</span></span></li></ol><div id="https://www.notion.so/abc2d000026945909531a370e61f1953" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div></article>
+  <footer class="Footer">
+  <div>&copy; Welcome to Robin’s Blog 2022</div>
+  <div>&centerdot;</div>
+  <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+      rel="noopener noreferrer">Notablog</a>.
+  </div>
+</footer>
+</body>
+
+</html>
