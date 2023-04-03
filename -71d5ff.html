@@ -411,7 +411,7 @@
         <span class="token keyword">while</span> fast <span class="token operator">!=</span> slow<span class="token punctuation">:</span>
             fast <span class="token operator">=</span> fast<span class="token punctuation">.</span><span class="token builtin">next</span>
             slow <span class="token operator">=</span> slow<span class="token punctuation">.</span><span class="token builtin">next</span>
-        <span class="token keyword">return</span> slow</span></span></span></code></pre></div></details><details id="https://www.notion.so/6dba2844491b45c2811216c8d8624ecb" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">合并两个链表</span></span></summary><div class="Toggle__Content"><div id="https://www.notion.so/0508de83c32943e8b12e703e60b92462" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdd3e1099-fd04-433c-84cf-703c095cd57f%2FmergeTwoLinked.png?width=1296&amp;table=block&amp;id=0508de83-c329-43e8-b12e-703e60b92462"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdd3e1099-fd04-433c-84cf-703c095cd57f%2FmergeTwoLinked.png?width=1296&amp;table=block&amp;id=0508de83-c329-43e8-b12e-703e60b92462" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><pre id="https://www.notion.so/f96f3db1e2594e18b3b98c863437d60f" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment"># Definition for singly-linked list.</span>
+        <span class="token keyword">return</span> slow</span></span></span></code></pre></div></details><details id="https://www.notion.so/6dba2844491b45c2811216c8d8624ecb" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">按照val顺序合并两个链表</span></span></summary><div class="Toggle__Content"><div id="https://www.notion.so/0508de83c32943e8b12e703e60b92462" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdd3e1099-fd04-433c-84cf-703c095cd57f%2FmergeTwoLinked.png?width=1296&amp;table=block&amp;id=0508de83-c329-43e8-b12e-703e60b92462"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdd3e1099-fd04-433c-84cf-703c095cd57f%2FmergeTwoLinked.png?width=1296&amp;table=block&amp;id=0508de83-c329-43e8-b12e-703e60b92462" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><pre id="https://www.notion.so/f96f3db1e2594e18b3b98c863437d60f" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment"># Definition for singly-linked list.</span>
 <span class="token comment"># class ListNode:</span>
 <span class="token comment">#     def __init__(self, val=0, next=None):</span>
 <span class="token comment">#         self.val = val</span>
@@ -460,7 +460,190 @@
                 prev <span class="token operator">=</span> curr
                 curr <span class="token operator">=</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span>
         
-        <span class="token keyword">return</span> dummyhead<span class="token punctuation">.</span><span class="token builtin">next</span></span></span></span></code></pre></div></details></div></details><details id="https://www.notion.so/46ad3fc8bb1140d3b34fdf984588273d" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">BFS应用</span></span></summary><div class="Toggle__Content"><details id="https://www.notion.so/a11ae2204f0d49099a1b23a2750e245a" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">01 Matrix</span></span></summary><div class="Toggle__Content"><div id="https://www.notion.so/8ec87f83af59452d89ee03912e9a861e" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F48c0a0b9-2d9e-44f3-9545-3bb4bbbe442d%2FUntitled.png?width=1082&amp;table=block&amp;id=8ec87f83-af59-452d-89ee-03912e9a861e"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F48c0a0b9-2d9e-44f3-9545-3bb4bbbe442d%2FUntitled.png?width=1082&amp;table=block&amp;id=8ec87f83-af59-452d-89ee-03912e9a861e" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><pre id="https://www.notion.so/7f595e6a654f43338954532ba076c477" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> dummyhead<span class="token punctuation">.</span><span class="token builtin">next</span></span></span></span></code></pre></div></details><details id="https://www.notion.so/eacfe7e1dfef4c15bf5da513cea0b1a2" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">删除倒数第n个节点</span></span></summary><div class="Toggle__Content"><div id="https://www.notion.so/3a06b8ba309d495b99cdf1e5569d3e54" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe12b8bc6-edc0-468b-9077-8712a4dccfb1%2FUntitled.png?width=576&amp;table=block&amp;id=3a06b8ba-309d-495b-99cd-f1e5569d3e54"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe12b8bc6-edc0-468b-9077-8712a4dccfb1%2FUntitled.png?width=576&amp;table=block&amp;id=3a06b8ba-309d-495b-99cd-f1e5569d3e54" style="width:576px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><pre id="https://www.notion.so/282d80f907c448c2bfb87cbe0a5c6fed" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment"># class ListNode:</span>
+<span class="token comment">#     def __init__(self, x):</span>
+<span class="token comment">#         self.val = x</span>
+<span class="token comment">#         self.next = None</span>
+<span class="token comment">#</span>
+<span class="token comment"># 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可</span>
+<span class="token comment">#</span>
+<span class="token comment"># </span>
+<span class="token comment"># @param head ListNode类 </span>
+<span class="token comment"># @param n int整型 </span>
+<span class="token comment"># @return ListNode类</span>
+<span class="token comment">#</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">removeNthFromEnd</span><span class="token punctuation">(</span>self <span class="token punctuation">,</span> head<span class="token punctuation">:</span> ListNode<span class="token punctuation">,</span> n<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> ListNode<span class="token punctuation">:</span>
+        <span class="token comment"># write code here</span>
+        <span class="token comment"># 先获取链表的长度</span>
+        length <span class="token operator">=</span> i <span class="token operator">=</span> <span class="token number">0</span>
+        l <span class="token operator">=</span> dummy <span class="token operator">=</span> head
+        <span class="token keyword">while</span> l<span class="token punctuation">:</span>
+            length <span class="token operator">+=</span> <span class="token number">1</span>
+            l <span class="token operator">=</span> l<span class="token punctuation">.</span><span class="token builtin">next</span>
+        <span class="token keyword">if</span> length <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+        <span class="token keyword">if</span> n <span class="token operator">==</span> length<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> dummy<span class="token punctuation">.</span><span class="token builtin">next</span>
+        <span class="token keyword">while</span> dummy<span class="token punctuation">:</span>
+            i <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">if</span> i <span class="token operator">!=</span> length <span class="token operator">-</span> n<span class="token punctuation">:</span>
+                dummy <span class="token operator">=</span> dummy<span class="token punctuation">.</span><span class="token builtin">next</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                dummy<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> dummy<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span><span class="token builtin">next</span>
+        <span class="token keyword">return</span> head</span></span></span></code></pre></div></details><details id="https://www.notion.so/3f280fe55f884d0b98da4e696a60caa2" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">两个链表相加（结合反转链表）</span></span></summary><div class="Toggle__Content"><div id="https://www.notion.so/7f1e750f53b34e73854921ea51401295" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd71381c4-0fa8-486c-8499-43818976f323%2FUntitled.png?width=528&amp;table=block&amp;id=7f1e750f-53b3-4e73-8549-21ea51401295"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd71381c4-0fa8-486c-8499-43818976f323%2FUntitled.png?width=528&amp;table=block&amp;id=7f1e750f-53b3-4e73-8549-21ea51401295" style="width:528px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><pre id="https://www.notion.so/7b53b54aa0e541b7b3f4daf9888471a5" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment"># class ListNode:</span>
+<span class="token comment">#     def __init__(self, x):</span>
+<span class="token comment">#         self.val = x</span>
+<span class="token comment">#         self.next = None</span>
+<span class="token comment">#</span>
+<span class="token comment"># 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可</span>
+<span class="token comment">#</span>
+<span class="token comment"># </span>
+<span class="token comment"># @param head1 ListNode类 </span>
+<span class="token comment"># @param head2 ListNode类 </span>
+<span class="token comment"># @return ListNode类</span>
+<span class="token comment">#</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">addInList</span><span class="token punctuation">(</span>self <span class="token punctuation">,</span> head1<span class="token punctuation">:</span> ListNode<span class="token punctuation">,</span> head2<span class="token punctuation">:</span> ListNode<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> ListNode<span class="token punctuation">:</span>
+        <span class="token comment"># write code here</span>
+        <span class="token comment"># 先翻转两个链表</span>
+        <span class="token keyword">def</span> <span class="token function">node_reverse</span><span class="token punctuation">(</span>h<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token keyword">not</span> h<span class="token punctuation">:</span>
+                <span class="token keyword">return</span> h
+
+            prev <span class="token operator">=</span> <span class="token boolean">None</span>
+            curr <span class="token operator">=</span> h
+            
+            <span class="token keyword">while</span> curr<span class="token punctuation">:</span>
+                temp <span class="token operator">=</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span>
+                curr<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> prev
+                prev <span class="token operator">=</span> curr
+                curr <span class="token operator">=</span> temp
+
+            <span class="token keyword">return</span> prev
+        
+				<span class="token comment"># 如果其中一个链表为空则返回另一个</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> head1<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> head2
+        <span class="token keyword">if</span> <span class="token keyword">not</span> head2<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> head1
+        
+        head1 <span class="token operator">=</span> node_reverse<span class="token punctuation">(</span>head1<span class="token punctuation">)</span>
+        head2 <span class="token operator">=</span> node_reverse<span class="token punctuation">(</span>head2<span class="token punctuation">)</span>
+
+        <span class="token comment">#构建一个新的链表</span>
+        dummy <span class="token operator">=</span> ListNode<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+        curr <span class="token operator">=</span> dummy
+        carry <span class="token operator">=</span> <span class="token number">0</span>
+
+        <span class="token keyword">while</span> head1 <span class="token keyword">or</span> head2<span class="token punctuation">:</span>
+            val <span class="token operator">=</span> carry
+            <span class="token comment"># 如果head1有值则加上head1</span>
+            <span class="token keyword">if</span> head1<span class="token punctuation">:</span>
+                val <span class="token operator">+=</span> head1<span class="token punctuation">.</span>val
+                head1 <span class="token operator">=</span> head1<span class="token punctuation">.</span><span class="token builtin">next</span>
+            <span class="token comment"># 如果head1有值则加上head1</span>
+            <span class="token keyword">if</span> head2<span class="token punctuation">:</span>
+                val <span class="token operator">+=</span> head2<span class="token punctuation">.</span>val
+                head2 <span class="token operator">=</span> head2<span class="token punctuation">.</span><span class="token builtin">next</span>
+						<span class="token comment">#构建新的链表</span>
+            curr<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> ListNode<span class="token punctuation">(</span>val<span class="token operator">%</span><span class="token number">10</span><span class="token punctuation">)</span>
+            carry <span class="token operator">=</span> val <span class="token operator">//</span> <span class="token number">10</span>
+            curr <span class="token operator">=</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span>
+        
+        <span class="token comment"># 若最后进位还有剩余，则创建一个新的node来表示这个进位</span>
+        <span class="token keyword">if</span> carry <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            curr<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> ListNode<span class="token punctuation">(</span>carry<span class="token punctuation">)</span>
+        
+        <span class="token keyword">return</span> node_reverse<span class="token punctuation">(</span>dummy<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">)</span></span></span></span></code></pre></div></details><details id="https://www.notion.so/7d09200aaf1b4a2d967c8b928f6fa3c6" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">重拍奇偶位置的链表</span></span></summary><div class="Toggle__Content"><div id="https://www.notion.so/94afb6c6c4c84d6eb207c204a6c9c297" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6a1751db-fd17-4d2f-9773-84d2e7aca661%2FUntitled.png?width=528&amp;table=block&amp;id=94afb6c6-c4c8-4d6e-b207-c204a6c9c297"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6a1751db-fd17-4d2f-9773-84d2e7aca661%2FUntitled.png?width=528&amp;table=block&amp;id=94afb6c6-c4c8-4d6e-b207-c204a6c9c297" style="width:528px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><pre id="https://www.notion.so/051bba88fec14c23841840abab3bbd55" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment"># class ListNode:</span>
+<span class="token comment">#     def __init__(self, x):</span>
+<span class="token comment">#         self.val = x</span>
+<span class="token comment">#         self.next = None</span>
+<span class="token comment">#</span>
+<span class="token comment"># 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可</span>
+<span class="token comment">#</span>
+<span class="token comment"># </span>
+<span class="token comment"># @param head ListNode类 </span>
+<span class="token comment"># @return ListNode类</span>
+<span class="token comment">#</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">oddEvenList</span><span class="token punctuation">(</span>self <span class="token punctuation">,</span> head<span class="token punctuation">:</span> ListNode<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> ListNode<span class="token punctuation">:</span>
+        <span class="token comment"># write code here</span>
+        <span class="token keyword">if</span> head <span class="token operator">==</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> head
+
+        odd <span class="token operator">=</span> head
+        even <span class="token operator">=</span> head<span class="token punctuation">.</span><span class="token builtin">next</span>
+        evenHead <span class="token operator">=</span> even
+        
+
+        <span class="token keyword">while</span> even <span class="token keyword">and</span> even<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">:</span>
+            <span class="token comment"># 奇数位置节点的下一个是偶数为节点的下一个，e.g. 1.next = 2.next = 3 -></span>
+            odd<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> even<span class="token punctuation">.</span><span class="token builtin">next</span>
+            odd <span class="token operator">=</span> odd<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token comment"># update 奇数位节点</span>
+            even<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> odd<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token comment"># even位的下一个跟在下一个odd后，即更新过后的odd的next</span>
+            even <span class="token operator">=</span> even<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token comment"># update 偶数位节点</span>
+        <span class="token comment"># 整个even nodes跟在odd后</span>
+        odd<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> evenHead
+        <span class="token keyword">return</span> head</span></span></span></code></pre></div></details><details id="https://www.notion.so/c095c4c2aaef440d83643c299eab143d" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">删除重复节点</span></span></summary><div class="Toggle__Content"><details id="https://www.notion.so/83d38b69a3e54898962e4c966c92abc8" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">保留一个重复节点</span></span></summary><div class="Toggle__Content"><div id="https://www.notion.so/564d00fa75af460283ec8d278c2f1b7a" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F741495ea-fe23-4890-8b9d-109a27d3916b%2FUntitled.png?width=528&amp;table=block&amp;id=564d00fa-75af-4602-83ec-8d278c2f1b7a"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F741495ea-fe23-4890-8b9d-109a27d3916b%2FUntitled.png?width=528&amp;table=block&amp;id=564d00fa-75af-4602-83ec-8d278c2f1b7a" style="width:528px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><pre id="https://www.notion.so/0863e542d47c4c2d8b1327aa2d4537e2" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment"># class ListNode:</span>
+<span class="token comment">#     def __init__(self, x):</span>
+<span class="token comment">#         self.val = x</span>
+<span class="token comment">#         self.next = None</span>
+<span class="token comment">#</span>
+<span class="token comment"># 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可</span>
+<span class="token comment">#</span>
+<span class="token comment"># </span>
+<span class="token comment"># @param head ListNode类 </span>
+<span class="token comment"># @return ListNode类</span>
+<span class="token comment">#</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">deleteDuplicates</span><span class="token punctuation">(</span>self <span class="token punctuation">,</span> head<span class="token punctuation">:</span> ListNode<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> ListNode<span class="token punctuation">:</span>
+        <span class="token comment"># write code here</span>
+        <span class="token keyword">if</span> head <span class="token operator">==</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> head
+        
+        curr <span class="token operator">=</span> head
+        <span class="token keyword">while</span> curr <span class="token keyword">and</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> curr<span class="token punctuation">.</span>val <span class="token operator">==</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span>val<span class="token punctuation">:</span>
+                curr<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span><span class="token builtin">next</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                curr <span class="token operator">=</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span>
+
+        <span class="token keyword">return</span> head</span></span></span></code></pre></div></details><details id="https://www.notion.so/ef7b67f258a04991b1a8a2b4b21ae6b4" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">不保留重复节点</span></span></summary><div class="Toggle__Content"><div id="https://www.notion.so/102945ed964f4e438583102dba314882" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F19f41ee2-a3ee-4804-940f-a399371659f3%2FUntitled.png?width=528&amp;table=block&amp;id=102945ed-964f-4e43-8583-102dba314882"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F19f41ee2-a3ee-4804-940f-a399371659f3%2FUntitled.png?width=528&amp;table=block&amp;id=102945ed-964f-4e43-8583-102dba314882" style="width:528px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><pre id="https://www.notion.so/0fd4a96b4290439789e83ae638051b9b" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment"># class ListNode:</span>
+<span class="token comment">#     def __init__(self, x):</span>
+<span class="token comment">#         self.val = x</span>
+<span class="token comment">#         self.next = None</span>
+<span class="token comment">#</span>
+<span class="token comment"># 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可</span>
+<span class="token comment">#</span>
+<span class="token comment"># </span>
+<span class="token comment"># @param head ListNode类 </span>
+<span class="token comment"># @return ListNode类</span>
+<span class="token comment">#</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">deleteDuplicates</span><span class="token punctuation">(</span>self <span class="token punctuation">,</span> head<span class="token punctuation">:</span> ListNode<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> ListNode<span class="token punctuation">:</span>
+        <span class="token comment"># write code here</span>
+        <span class="token keyword">if</span> head <span class="token operator">==</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> head
+        <span class="token comment"># 思想：比较每两个相邻的node，一旦出现重复，则先记下这个val，跳过后续所有相等的node</span>
+        <span class="token comment"># 构建一个dummy，好从head就开始比较是否有相等的node</span>
+        dummy <span class="token operator">=</span> ListNode<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+        dummy<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> head
+        curr <span class="token operator">=</span> dummy
+
+        <span class="token keyword">while</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token keyword">and</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">:</span>
+            <span class="token comment"># 一旦发现相等val的nodes</span>
+            <span class="token keyword">if</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span>val <span class="token operator">==</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span>val<span class="token punctuation">:</span>
+                <span class="token comment"># 记下当前val</span>
+                v <span class="token operator">=</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span>val
+                <span class="token comment"># 跳过后续所有该val的node</span>
+                <span class="token keyword">while</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token keyword">and</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span>val <span class="token operator">==</span> v<span class="token punctuation">:</span>
+                    curr<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span><span class="token builtin">next</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token comment"># 否则正常update curr</span>
+                curr <span class="token operator">=</span> curr<span class="token punctuation">.</span><span class="token builtin">next</span>
+
+        <span class="token keyword">return</span> dummy<span class="token punctuation">.</span><span class="token builtin">next</span></span></span></span></code></pre></div></details></div></details></div></details><details id="https://www.notion.so/46ad3fc8bb1140d3b34fdf984588273d" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">BFS应用</span></span></summary><div class="Toggle__Content"><details id="https://www.notion.so/a11ae2204f0d49099a1b23a2750e245a" class="ColorfulBlock ColorfulBlock--ColorDefault Toggle "><summary class="Toggle__Summary"><span class="SemanticStringArray"><span class="SemanticString">01 Matrix</span></span></summary><div class="Toggle__Content"><div id="https://www.notion.so/8ec87f83af59452d89ee03912e9a861e" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F48c0a0b9-2d9e-44f3-9545-3bb4bbbe442d%2FUntitled.png?width=1082&amp;table=block&amp;id=8ec87f83-af59-452d-89ee-03912e9a861e"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F48c0a0b9-2d9e-44f3-9545-3bb4bbbe442d%2FUntitled.png?width=1082&amp;table=block&amp;id=8ec87f83-af59-452d-89ee-03912e9a861e" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><pre id="https://www.notion.so/7f595e6a654f43338954532ba076c477" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">updateMatrix</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> mat<span class="token punctuation">:</span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
         row <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>mat<span class="token punctuation">)</span>
         col <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>mat<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
